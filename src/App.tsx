@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
+import { Navbar } from "./common/navbar/navbar.component";
 
 function App() {
-  return <div className="mt-[50px]">Gravity</div>;
+  return <Navbar />;
 }
 
 export default App;
