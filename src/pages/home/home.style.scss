@@ -19,7 +19,7 @@
   }
 
   .textHome {
-    font-size: 35px;
+    font-size: 35px !important;
   }
 }
 
@@ -30,7 +30,7 @@
   }
 
   .textHome {
-    font-size: 35px;
+    font-size: 35px !important;
   }
 }
 
@@ -41,6 +41,13 @@
 
   .textHome {
     font-size: 30px !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .textHome {
+    font-size: 25px !important;
     width: 100% !important;
   }
 }

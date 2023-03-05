@@ -1,0 +1,27 @@
+.linkFooter {
+  color: rgba(38, 38, 38, 0.5);
+  font-weight: normal;
+  transition: all 0.5s;
+}
+
+.linkFooter:hover {
+  color: #000;
+}
+
+footer p {
+  transition: all 0.5s;
+}
+
+footer p:hover {
+  color: #000;
+}
+
+@media (max-width: 700px) {
+  .contentLFooter {
+    display: none;
+  }
+
+  .footerContent {
+    bottom: 15px;
+  }
+}
