@@ -23,6 +23,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .contentHome {
+    height: 88vh;
+  }
+}
+
 @media (max-width: 900px) {
   .logoHome {
     right: 20px;
@@ -31,6 +37,12 @@
 
   .textHome {
     font-size: 35px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .contentHome {
+    height: 85vh;
   }
 }
 
@@ -52,7 +64,7 @@
   }
 
   .contentHome {
-    height: 75vh;
+    height: 85vh;
   }
 }
 

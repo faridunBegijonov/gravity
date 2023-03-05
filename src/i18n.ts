@@ -16,6 +16,11 @@ const resources = {
       "Помогаем вашему":
         "Помогаем вашему бренду сиять в digital-вселенной, соответствовать международным стандартам и привлекать клиентов вашей мечты.",
       Мы: "Мы — Gravity Studio.",
+      Достижения: "Достижения",
+      "Бизнес и сертифицированный":
+        "Бизнес и сертифицированный партнер компании «1C-Битрикс»",
+      "Лидер продаж":
+        "Лидер продаж продуктов 1C-Битрикс в Таджикистане (2018/2019/2020) гг.",
     },
   },
   en: {
@@ -32,6 +37,11 @@ const resources = {
       "Помогаем вашему":
         "We help your brand shine in the digital universe, meet international standards and attract the customers of your dreams.",
       Мы: "We are Gravity Studio.",
+      Достижения: "Achievements",
+      "Бизнес и сертифицированный":
+        "Business and certified partner of 1C-Bitrix",
+      "Лидер продаж":
+        "Sales leader of 1C-Bitrix products in Tajikistan (2018/2019/2020)",
     },
   },
   uzb: {
@@ -48,6 +58,11 @@ const resources = {
       "Помогаем вашему":
         "Biz sizning brendingizni raqamli olamda porlashiga, xalqaro standartlarga javob berishiga va orzuingizdagi mijozlarni jalb qilishga yordam beramiz.",
       Мы: "Biz Gravity Studiomiz.",
+      Достижения: "Yutuqlar",
+      "Бизнес и сертифицированный":
+        "1C-Bitrix kompaniyasining biznes va sertifikatlangan hamkori",
+      "Лидер продаж":
+        "Tojikistonda 1C-Bitrix mahsulotlarini sotish bo'yicha yetakchi (2018/2019/2020)",
     },
   },
 };
