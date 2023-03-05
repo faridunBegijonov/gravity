@@ -8,17 +8,22 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import './navbar.style.scss'
+import "./navbar.style.scss";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 type Anchor = "right";
 
 export const MobileMenu: React.FC = () => {
+  const { t } = useTranslation();
+
   const [state, setState] = useState({
-    top: false,
-    left: false,
-    bottom: false,
     right: false,
   });
+
+  const changeLanguage = (l: string) => {
+    i18n.changeLanguage(l);
+  };
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -44,34 +49,34 @@ export const MobileMenu: React.FC = () => {
       <List>
         <ListItem>
           <ListItemButton>
-            <NavLink to="/studio">Студия</NavLink>
+            <NavLink to="/studio">{t("Студия")}</NavLink>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
-            <NavLink to="/cases">Кейсы</NavLink>
+            <NavLink to="/cases">{t("Кейсы")}</NavLink>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
-            <NavLink to="/services">Услуги</NavLink>
+            <NavLink to="/services">{t("Услуги")}</NavLink>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>
-            <NavLink to="/startProject">+ Начать проект</NavLink>
+            <NavLink to="/startProject">{t("+Начать проект")}</NavLink>
           </ListItemButton>
         </ListItem>
         <ListItem>
           <ListItemButton>Язык</ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem onClick={() => changeLanguage("ru")}>
           <ListItemButton>RU</ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem onClick={() => changeLanguage("en")}>
           <ListItemButton>EN</ListItemButton>
         </ListItem>
-        <ListItem>
+        <ListItem onClick={() => changeLanguage("uzb")}>
           <ListItemButton>UZB</ListItemButton>
         </ListItem>
       </List>
@@ -79,7 +84,7 @@ export const MobileMenu: React.FC = () => {
   );
 
   return (
-    <div className="menuNavbar" >
+    <div className="menuNavbar">
       {(["right"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <IconButton

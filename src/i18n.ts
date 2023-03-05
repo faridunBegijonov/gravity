@@ -4,17 +4,26 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   ru: {
     translation: {
-      "Welcome to React": "Welcome to React and react-i18next",
+      Студия: "Студия",
+      Кейсы: "Кейсы",
+      Услуги: "Услуги",
+      "+Начать проект": "+ Начать проект",
     },
   },
   en: {
     translation: {
-      "Welcome to React": "Bienvenue à React et react-i18next",
+      Студия: "Studio",
+      Кейсы: "Cases",
+      Услуги: "Services",
+      "+Начать проект": "+ Start project",
     },
   },
   uzb: {
     translation: {
-      "Welcome to React": "Bienvenue à React et react-i18next",
+      Студия: "Studiya",
+      Кейсы: "Ishlar",
+      Услуги: "Xizmatlar",
+      "+Начать проект": "+ Loyihani boshlash",
     },
   },
 };

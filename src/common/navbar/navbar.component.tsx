@@ -1,9 +1,8 @@
 import React from "react";
 import logo from "../../assets/navbar/logo-dark.svg";
-import { Container, IconButton, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.style.scss";
-import MenuIcon from "@mui/icons-material/Menu";
 import { MobileMenu } from "./mobileMenu.component";
 
 export const Navbar: React.FC = () => {
