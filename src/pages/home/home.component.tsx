@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
     <>
       <Navbar />
       <Container maxWidth="xl">
-        <div className="h-[70vh] flex items-center justify-between relative contentHome ">
+        <div className="h-[80vh] flex items-center justify-between relative contentHome ">
           <Typography
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -30,6 +30,8 @@ export const Home: React.FC = () => {
             {t("Создаем")}
           </Typography>
           <img
+            data-aos="fade-right"
+            data-aos-duration="1000"
             src={logoHome}
             alt="Img"
             className="logoHome  absolute right-[120px]"

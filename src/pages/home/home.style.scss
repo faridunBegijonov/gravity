@@ -50,4 +50,14 @@
     font-size: 25px !important;
     width: 100% !important;
   }
+
+  .contentHome {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .contentHome {
+    height: 70vh;
+  }
 }
