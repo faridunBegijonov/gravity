@@ -1,0 +1,46 @@
+.logoHome {
+  animation: logoHome 2s infinite;
+}
+
+@keyframes logoHome {
+  0% {
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+  }
+}
+
+@media (max-width: 1120px) {
+  .logoHome {
+    right: 70px;
+    width: 200px;
+  }
+
+  .textHome {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  .logoHome {
+    right: 20px;
+    width: 150px;
+  }
+
+  .textHome {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logoHome {
+    display: none;
+  }
+
+  .textHome {
+    font-size: 30px !important;
+    width: 100% !important;
+  }
+}

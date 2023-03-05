@@ -4,11 +4,13 @@ import { Container, Typography } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.style.scss";
 import { MobileMenu } from "./mobileMenu.component";
+import { useTranslation } from "react-i18next";
 
 export const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <Container maxWidth="xl">
-      <nav className="flex items-center py-[25px] justify-between ">
+      <nav className="flex items-center py-[25px] justify-between">
         <div className="flex items-center">
           <Link to="/">
             <img src={logo} alt="Logo" className="mr-4" />
@@ -22,15 +24,15 @@ export const Navbar: React.FC = () => {
         </div>
         <div className="flex items-center contentListNav ">
           <NavLink className="mr-4" to="/studio">
-            Студия
+            {t("Студия")}
           </NavLink>
           <NavLink className="mr-4" to="/cases">
-            Кейсы
+            {t("Кейсы")}
           </NavLink>
           <NavLink className="mr-4" to="/services">
-            Услуги
+            {t("Услуги")}
           </NavLink>
-          <NavLink to="/startProject">+ Начать проект</NavLink>
+          <NavLink to="/startProject">{t("+Начать проект")}</NavLink>
         </div>
         <MobileMenu />
       </nav>

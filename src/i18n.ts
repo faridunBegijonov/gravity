@@ -8,6 +8,8 @@ const resources = {
       Кейсы: "Кейсы",
       Услуги: "Услуги",
       "+Начать проект": "+ Начать проект",
+      Создаем:
+        "Создаем цифровые продукты, которые приносят пользу бизнесу наших клиентов.",
     },
   },
   en: {
@@ -16,6 +18,8 @@ const resources = {
       Кейсы: "Cases",
       Услуги: "Services",
       "+Начать проект": "+ Start project",
+      Создаем:
+        "We create digital products that benefit our clients' businesses.",
     },
   },
   uzb: {
@@ -24,6 +28,8 @@ const resources = {
       Кейсы: "Ishlar",
       Услуги: "Xizmatlar",
       "+Начать проект": "+ Loyihani boshlash",
+      Создаем:
+        "Biz mijozlarimizning biznesiga foyda keltiradigan raqamli mahsulotlarni yaratamiz.",
     },
   },
 };
