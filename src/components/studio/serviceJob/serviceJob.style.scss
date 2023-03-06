@@ -32,4 +32,12 @@
   .contentJobStudio p {
     font-size: 15px;
   }
+
+  .contentJobStudio {
+    margin-bottom: 18px;
+  }
+
+  .contentJobStudio:last-child {
+    margin-bottom: 0;
+  }
 }
