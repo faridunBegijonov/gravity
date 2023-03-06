@@ -24,7 +24,7 @@ export const WeAreTrusted: React.FC = () => {
       <Typography variant="h4" sx={{ fontWeight: "bold" }}>
         {t("Нам доверяют")}
       </Typography>
-      <div className=" contentImglogo flex items-center mt-[18px] mx-auto px-[60px] py-[15px]">
+      <div className="contentImglogo flex items-center mt-[18px] mx-auto px-[60px] py-[15px]">
         <img src={bekhatar} alt="Img" />
         <img src={fsvc} alt="Img" />
         <img src={amb} alt="Img" />

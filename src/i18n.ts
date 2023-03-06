@@ -22,6 +22,9 @@ const resources = {
       "Лидер продаж":
         "Лидер продаж продуктов 1C-Битрикс в Таджикистане (2018/2019/2020) гг.",
       "Нам доверяют": "Нам доверяют",
+      "лет успешной работы": "лет успешной работы",
+      "сотрудников в штате": "сотрудников в штате",
+      "реализовынных проектов": "реализовынных проектов",
     },
   },
   en: {
@@ -44,6 +47,9 @@ const resources = {
       "Лидер продаж":
         "Sales leader of 1C-Bitrix products in Tajikistan (2018/2019/2020)",
       "Нам доверяют": "We are trusted",
+      "лет успешной работы": "years of successful work",
+      "сотрудников в штате": "employees in the state",
+      "реализовынных проектов": "implemented projects",
     },
   },
   uzb: {
@@ -66,6 +72,9 @@ const resources = {
       "Лидер продаж":
         "Tojikistonda 1C-Bitrix mahsulotlarini sotish bo'yicha yetakchi (2018/2019/2020)",
       "Нам доверяют": "Biz ishonamiz",
+      "лет успешной работы": "muvaffaqiyatli ish yillari",
+      "сотрудников в штате": "davlatdagi xodimlar",
+      "реализовынных проектов": "amalga oshirilgan loyihalar",
     },
   },
 };
