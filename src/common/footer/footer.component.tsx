@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
   };
   return (
     <Container maxWidth="xl">
-      <footer className="flex items-center justify-between footerContent ">
+      <footer className="flex items-center justify-between footerContent py-[20px] ">
         <div className="flex items-center flex-wrap ">
           <a
             className="linkFooter mr-[15px]"

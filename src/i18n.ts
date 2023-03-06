@@ -25,6 +25,7 @@ const resources = {
       "лет успешной работы": "лет успешной работы",
       "сотрудников в штате": "сотрудников в штате",
       "реализовынных проектов": "реализовынных проектов",
+      "Используемые технологии": "Используемые технологии",
     },
   },
   en: {
@@ -50,6 +51,7 @@ const resources = {
       "лет успешной работы": "years of successful work",
       "сотрудников в штате": "employees in the state",
       "реализовынных проектов": "implemented projects",
+      "Используемые технологии": "Technologies used",
     },
   },
   uzb: {
@@ -75,6 +77,7 @@ const resources = {
       "лет успешной работы": "muvaffaqiyatli ish yillari",
       "сотрудников в штате": "davlatdagi xodimlar",
       "реализовынных проектов": "amalga oshirilgan loyihalar",
+      "Используемые технологии": "Ishlatilgan texnologiyalar",
     },
   },
 };

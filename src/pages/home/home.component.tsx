@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
     <>
       <Navbar />
       <Container maxWidth="xl">
-        <div className="h-[80vh] flex items-center justify-between relative contentHome ">
+        <div className="h-[77vh] flex items-center justify-between relative contentHome ">
           <Typography
             data-aos="fade-up"
             data-aos-duration="1000"
