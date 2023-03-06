@@ -21,6 +21,7 @@ const resources = {
         "Бизнес и сертифицированный партнер компании «1C-Битрикс»",
       "Лидер продаж":
         "Лидер продаж продуктов 1C-Битрикс в Таджикистане (2018/2019/2020) гг.",
+      "Нам доверяют": "Нам доверяют",
     },
   },
   en: {
@@ -42,6 +43,7 @@ const resources = {
         "Business and certified partner of 1C-Bitrix",
       "Лидер продаж":
         "Sales leader of 1C-Bitrix products in Tajikistan (2018/2019/2020)",
+      "Нам доверяют": "We are trusted",
     },
   },
   uzb: {
@@ -63,6 +65,7 @@ const resources = {
         "1C-Bitrix kompaniyasining biznes va sertifikatlangan hamkori",
       "Лидер продаж":
         "Tojikistonda 1C-Bitrix mahsulotlarini sotish bo'yicha yetakchi (2018/2019/2020)",
+      "Нам доверяют": "Biz ishonamiz",
     },
   },
 };

@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Achievements } from "../../components/studio/achievements/achievements.component";
+import { WeAreTrusted } from "../../components/studio/weAreTrusted/weAreTrusted.component";
 
 export const Studio: React.FC = () => {
   const { t } = useTranslation();
@@ -40,6 +41,7 @@ export const Studio: React.FC = () => {
           />
         </div>
         <Achievements />
+        <WeAreTrusted />
       </Container>
 
       <Footer />
