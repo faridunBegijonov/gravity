@@ -36,3 +36,16 @@ a:hover {
 .active {
   color: rgba(38, 38, 38, 0.5) !important;
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #223C50;
+  border-radius: 15px;
+}
