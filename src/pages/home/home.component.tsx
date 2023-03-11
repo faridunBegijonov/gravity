@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import { Navbar } from "../../common/navbar/navbar.component";
 import { Container, Typography } from "@mui/material";
 import logoHome from "../../assets/home/homeLogo.svg";
 import "./home.style.scss";
 import { useTranslation } from "react-i18next";
-import { Footer } from "../../common/footer/footer.component";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Layout } from '../../common/layout/layout.component';
 
 export const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -16,8 +15,7 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Container maxWidth="xl">
         <div className="h-[77vh] flex items-center justify-between relative contentHome ">
           <Typography
@@ -38,7 +36,6 @@ export const Home: React.FC = () => {
           />
         </div>
       </Container>
-      <Footer />
-    </>
+    </Layout>
   );
 };

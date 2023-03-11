@@ -3,6 +3,7 @@ import React from "react";
 import { Home } from "../pages/home/home.component";
 import { Studio } from "../pages/studio/studio.component";
 import Service from "../components/services/service.component";
+import { Servicepage } from '../pages/service/service.page';
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/services",
-    element: <Service />,
+    element: <Servicepage />,
   },
 ]);

@@ -11,6 +11,7 @@ import { Achievements } from "../../components/studio/achievements/achievements.
 import { WeAreTrusted } from "../../components/studio/weAreTrusted/weAreTrusted.component";
 import { ServiceJob } from "../../components/studio/serviceJob/serviceJob.component";
 import { TechnologiesUsed } from "../../components/studio/technologiesUsed/technologiesUsed.component";
+import { Layout } from '../../common/layout/layout.component';
 
 export const Studio: React.FC = () => {
   const { t } = useTranslation();
@@ -20,8 +21,7 @@ export const Studio: React.FC = () => {
   }, []);
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Container maxWidth="xl">
         <div className="flex items-center mt-[75px] contentStudio">
           <div
@@ -47,7 +47,6 @@ export const Studio: React.FC = () => {
         <ServiceJob />
         <TechnologiesUsed />
       </Container>
-      <Footer />
-    </>
+    </Layout>
   );
 };
