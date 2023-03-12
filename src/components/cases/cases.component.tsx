@@ -1,16 +1,4 @@
-import { Container, Typography } from "@mui/material";
-import * as React from "react";
-import { Layout } from "../../common/layout/layout.component";
-import "./cases.style.scss";
-import amb from "../../assets/ceses/amb_cases.png";
-import astore from '../../assets/ceses/astore_cases.png';
-import { Link } from "react-router-dom";
-import { ItemCases } from "./itemCases.component";
-import * as React from 'react';
-import { Container, Typography } from '@mui/material';
-import { Layout } from '../../common/layout/layout.component';
-import { Link } from 'react-router-dom';
-import { ItemCases } from './itemCases.component';
+import React from 'react';
 import amb from '../../assets/ceses/amb_cases.png';
 import osiaf from '../../assets/ceses/osiaf_cases.png';
 import bekhatar from '../../assets/ceses/bekhatar_cases.png';
@@ -23,7 +11,9 @@ import snowdrop from '../../assets/ceses/snowdrop_cases.png';
 import tajset from '../../assets/ceses/tajset_cases.png';
 import mevr from '../../assets/ceses/mevr_cases.png';
 import kaynak from '../../assets/ceses/kaynak_cases.png';
-import './cases.style.scss';
+import { Layout } from '../../common/layout/layout.component';
+import { Container, Typography } from '@mui/material';
+import { ItemCases } from './itemCases.component';
 
 const casesObj = [
   {
@@ -144,27 +134,9 @@ const Cases: React.FC = () => {
           Кейсы
         </Typography>
         <div className='gridCases mt-[25px]'>
-          <div className='amb'>
-            <img src={amb} alt='AmbImg' />
-            <p>Амонатбонк</p>
-            <Link to='/cases/amb'>
-              <div className='bgAmb hover:bg-[#16a34a]/50'>
-                <div className='flex flex-col'>
-                  <span className='text-[22px] mb-[8px] '>
-                    Государственный сберегательный банк Республики Таджикистан{' '}
-                  </span>
-                  <span className='text-[18px] mb-[8px]'>
-                    Выстроили единый концепт подачи информации на сайте и
-                    рассказали о ключевых достоинствах банка
-                  </span>
-                  <span>
-                    UI/UX, Html, Css, JavaScript, 1CBitrix, PHP, MySQL
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <p>conglikt</p>
+          {casesObj.map((item) => {
+            return <ItemCases key={Date.now()} {...item} />;
+          })}
         </div>
       </Container>
     </Layout>
