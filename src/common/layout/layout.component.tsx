@@ -3,7 +3,7 @@ import { Navbar } from "../navbar/navbar.component";
 import { Footer } from "../footer/footer.component";
 
 interface ILayout {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export const Layout: React.FC<ILayout> = ({ children }: ILayout) => {
