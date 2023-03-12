@@ -137,7 +137,6 @@ const casesObj = [
     technology: 'UX/UI, Html, Css, JavaScript, Laravel, MySQL',
   },
 ];
->>>>>>> 37d5f7f74680fd679f98e61bab0dfa3aae56ab9f
 
 const Cases: React.FC = () => {
   return (
