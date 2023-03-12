@@ -6,14 +6,15 @@ interface IItemCases {
     spanName: string;
     spanDes: string;
     spanTex: string;
+    path: string;
 }
 
-export const ItemCases: React.FC<IItemCases> = ({ img, spanName, spanDes, spanTex }: IItemCases) => {
+export const ItemCases: React.FC<IItemCases> = ({ img, spanName, spanDes, spanTex, path }: IItemCases) => {
     return (
         <div className="amb">
             <img src={img} alt="AmbImg" />
             <p>Амонатбонк</p>
-            <Link to="/cases/amb">
+            <Link to={path}>
                 <div className="bgAmb hover:bg-[#16a34a]/50">
                     <div className="flex flex-col">
                         <span className="text-[22px] mb-[8px] ">
