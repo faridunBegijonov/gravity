@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import amb from '../../assets/ceses/amb_cases.png';
 import osiaf from '../../assets/ceses/osiaf_cases.png';
 import bekhatar from '../../assets/ceses/bekhatar_cases.png';
@@ -14,6 +14,8 @@ import kaynak from '../../assets/ceses/kaynak_cases.png';
 import { Layout } from '../../common/layout/layout.component';
 import { Container, Typography } from '@mui/material';
 import { ItemCases } from './itemCases.component';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const casesObj = [
   {
@@ -140,6 +142,10 @@ const casesObj = [
 ];
 
 const Cases: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Layout>
       <Container maxWidth='xl'>
@@ -148,7 +154,7 @@ const Cases: React.FC = () => {
         </Typography>
         <div className='gridCases mt-[25px]'>
           {casesObj.map((item) => {
-            return <ItemCases key={Date.now()} {...item} />;
+            return <ItemCases key={item.name} {...item} />;
           })}
         </div>
       </Container>

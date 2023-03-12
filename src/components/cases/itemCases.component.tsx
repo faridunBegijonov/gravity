@@ -22,7 +22,7 @@ export const ItemCases: React.FC<IItemCases> = ({
     color
 }: IItemCases) => {
     return (
-        <div className="amb">
+        <div data-aos='fade-up' data-aos-duration='1000' className="amb">
             <img src={src} alt="AmbImg" />
             <p className="font-bold text-[20px]">{name}</p>
             <Link to={path}>
