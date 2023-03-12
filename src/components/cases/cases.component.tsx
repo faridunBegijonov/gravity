@@ -24,6 +24,7 @@ const casesObj = [
       ' Выстроили единый концепт подачи информации на сайте и рассказали о ключевых достоинствах банка',
     path: '/cases/amb',
     technology: 'UI/UX, Html, Css, JavaScript, 1CBitrix, PHP, MySQL',
+    color: "#16a34a",
   },
   {
     name: 'Проверяйте штрафы ПДД  «Шахри Бехатар»',
@@ -33,6 +34,7 @@ const casesObj = [
       'Разработали сервис, в котором каждый водитель может следить за своими нарушениями ПДД. ',
     path: '/cases/bekhatar',
     technology: '#UI/UX, Html, Css, JavaScript, Go, Postgress',
+    color: "#0891b2",
   },
   {
     name: 'Институт "Открытое общество" - Фонд Содействия в Таджикистане',
@@ -42,6 +44,7 @@ const casesObj = [
       'Создали информативный и удобный веб-сайт, где пользователь сможет легко и быстро найти нужную ему информацию',
     path: '/cases/osiaf',
     technology: 'UI/UX, Html, Css, JavaScript, Laravel, PHP, MySQL',
+    color: "#d97706",
   },
   {
     name: 'PBO-EITI Tajikistan',
@@ -51,6 +54,7 @@ const casesObj = [
       'Разработали максимально удобный сайт, где с лёгкостью можно найти информацию о компании и их бенефициарных собственников.',
     path: '/cases/pbo',
     technology: 'UI/UX, Html, Css, JavaScript, Laravel, PHP, MySQL',
+    color: "#1d4ed8",
   },
   {
     name: ' Министерство финансов Республики Таджикистан',
@@ -60,6 +64,7 @@ const casesObj = [
       'Разработали сайт с уникальным дизайном, который удовлетворяет требование нашего заказчика, адаптивный под все устройства и легкий в поиске информации.',
     path: '/cases/moliya',
     technology: 'UI/UX, Html, Css, JavaScript, Wordpress, PHP, MySQL',
+    color: "#4338кa",
   },
   {
     name: 'Министерство энергетики и водных ресурсов Республики Таджикистана',
@@ -69,6 +74,8 @@ const casesObj = [
       'Создали информативный и удобный веб-сайт, где пользователь сможет легко и быстро найти нужную ему информацию.',
     path: '/cases/merv',
     technology: 'UX/UI, Html, Css, JavaScript, Laravel, MySQL',
+    color: "#0d9488",
+
   },
   {
     name: 'Snowdrop',
@@ -78,6 +85,7 @@ const casesObj = [
       ' Разработали сайт для любителей почитать интересные, полезные книги и статьи в очень удобном интерфейсе. ',
     path: 'cases/snowdrop',
     technology: 'UI/UX, Html, Css, JavaScript, Laravel, PHP, MySQL',
+    color: '#0d9488'
   },
   {
     name: 'Микрокредитная депозитная организация «Хумо»',
@@ -87,6 +95,7 @@ const casesObj = [
       'Разработали информативный и удобный веб-сайт, на трех языках, который реализовывал бы цели клиентов компании.',
     path: '/cases/humo',
     technology: 'UI/UX, Html, Css, JavaScript, 1CBitrix, PHP, MySQL',
+    color: "#ca8a04",
   },
   {
     name: 'Сеть Салонов Связи «TAJСЕТЬ»',
@@ -96,6 +105,7 @@ const casesObj = [
       'Разработали удобную CRM-систему, где сотрудники могут управлять ведением клиентской базы, автоматизацией продаж и работой со сделками.',
     path: '/cases/tajset',
     technology: 'UI/UX, Html, Css, JavaScript, Laravel, PHP, MySQL',
+    color: "#94a3b8",
   },
   {
     name: 'Astore — является официальным партнером продукции Xiaomi в Таджикистане.»',
@@ -106,6 +116,7 @@ const casesObj = [
       'Astore — является официальным партнером продукции Xiaomi в Таджикистане.',
     path: '/cases/astore',
     technology: 'UX/UI, Html, Css, JavaScript, 1СBitrix, MySQL',
+    color: "#dc2626",
   },
   {
     name: 'Интернет-магазин "КАЙНАК"',
@@ -114,6 +125,7 @@ const casesObj = [
     description: 'Создали и развиваем интернет-магазин канцелярских товаров',
     path: '/cases/kaynak',
     technology: 'UI/UX, Html, Css, JavaScript, Go, Postgress',
+    color: "#fbbf24",
   },
   {
     name: 'Маркетинговое агентство "NextView"',
@@ -123,6 +135,7 @@ const casesObj = [
       'Создали презентабельный сайт, в котором будет преподнесена информация об услугах компании, истории бренда и кейсов о доверяющих клиентах.',
     path: '/cases/nextview',
     technology: 'UX/UI, Html, Css, JavaScript, Laravel, MySQL',
+    color: "#65a30d"
   },
 ];
 

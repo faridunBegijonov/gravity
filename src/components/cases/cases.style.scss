@@ -58,6 +58,32 @@
   transition: all 0.5s ease;
 }
 
+.amb:nth-child(2) .bgAmb {
+  background-color: rgba(34, 211, 238, 0.5);
+}
+
+.amb:nth-child(3) .bgAmb {
+  background-color: rgba(180, 83, 9, 0.5);
+}
+
+
+
+.amb:nth-child(3) p {
+  color: #fff;
+}
+
+.amb:nth-child(4) p {
+  color: #fff;
+}
+
+.amb:nth-child(7) p {
+  color: #fff;
+}
+
+.amb:nth-child(12) p {
+  color: #fff;
+}
+
 .bgAmb div {
   transform: translateY(120px);
   transition: all 0.5s ease;
