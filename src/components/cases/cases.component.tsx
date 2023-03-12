@@ -1,3 +1,11 @@
+import { Container, Typography } from "@mui/material";
+import * as React from "react";
+import { Layout } from "../../common/layout/layout.component";
+import "./cases.style.scss";
+import amb from "../../assets/ceses/amb_cases.png";
+import astore from '../../assets/ceses/astore_cases.png';
+import { Link } from "react-router-dom";
+import { ItemCases } from "./itemCases.component";
 import * as React from 'react';
 import { Container, Typography } from '@mui/material';
 import { Layout } from '../../common/layout/layout.component';
