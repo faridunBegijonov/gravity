@@ -11,7 +11,7 @@ import { Achievements } from "../../components/studio/achievements/achievements.
 import { WeAreTrusted } from "../../components/studio/weAreTrusted/weAreTrusted.component";
 import { ServiceJob } from "../../components/studio/serviceJob/serviceJob.component";
 import { TechnologiesUsed } from "../../components/studio/technologiesUsed/technologiesUsed.component";
-import { Layout } from '../../common/layout/layout.component';
+import { Layout } from "../../common/layout/layout.component";
 
 export const Studio: React.FC = () => {
   const { t } = useTranslation();

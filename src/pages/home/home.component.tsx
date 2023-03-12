@@ -5,7 +5,7 @@ import "./home.style.scss";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Layout } from '../../common/layout/layout.component';
+import { Layout } from "../../common/layout/layout.component";
 
 export const Home: React.FC = () => {
   const { t } = useTranslation();
