@@ -48,7 +48,7 @@ const StartProject = () => {
             >
               Начать проект
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between', width: "85%", mt: 3 }}>
               <ToggleButton
                 value='check'
                 selected={selected}
