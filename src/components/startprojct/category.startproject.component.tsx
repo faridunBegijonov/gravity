@@ -27,7 +27,7 @@ const Category: React.FC = () => {
       sx={{
         display: 'flex',
         justifyContent: 'space-between',
-        width: '85%',
+        width: '100%',
         mt: 3,
       }}
     >
