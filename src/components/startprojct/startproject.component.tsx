@@ -2,39 +2,15 @@ import React, { useState } from 'react';
 import { Layout } from '../../common/layout/layout.component';
 import { Box, Container } from '@mui/system';
 import Typography from '@mui/material/Typography';
-import ToggleButton from '@mui/material/ToggleButton';
 import Category from './category.startproject.component';
 import FormComponent from './form.startproject.component';
+import './startproject.css';
 
 const StartProject = () => {
-  const [selected, setSelected] = useState(false);
-  const [selectedWeb, setSelectedWeb] = useState(false);
-  const [selectedMobile, setSelectedMobile] = useState(false);
-  const [selectedDesing, setSelectedDesing] = useState(false);
-  const [selectedCrm, setSelectedCrm] = useState(false);
-
-  const mobileSelect = () => {
-    setSelectedMobile(!selectedMobile);
-  };
-  const WebSelect = () => {
-    setSelectedWeb(!selectedWeb);
-  };
-  const DesingSelect = () => {
-    setSelectedDesing(!selectedDesing);
-  };
-  const crmSelect = () => {
-    setSelectedCrm(!selectedCrm);
-  };
-
   return (
     <Layout>
       <Container maxWidth='xl'>
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-          }}
-        >
+        <div className='w-full flex justify-between mobile'>
           <Box
             sx={{
               width: '100%',
@@ -49,11 +25,23 @@ const StartProject = () => {
             >
               Начать проект
             </Typography>
-            <Category />
-            <FormComponent />
+            <Box
+              sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}
+            >
+              <Category />
+            </Box>
+            <Box
+              sx={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <FormComponent />
+            </Box>
           </Box>
           <Box
-            sx={{ width: '350px', display: 'flex', flexDirection: 'column' }}
+            sx={{ width: '470px', display: 'flex', flexDirection: 'column' }}
           >
             <Typography
               variant='h4'
@@ -82,7 +70,7 @@ const StartProject = () => {
               </Typography>
             </Box>
           </Box>
-        </Box>
+        </div>
       </Container>
     </Layout>
   );
