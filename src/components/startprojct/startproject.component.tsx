@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { Layout } from "../../common/layout/layout.component";
-import { Box, Container } from "@mui/system";
-import Typography from "@mui/material/Typography";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import ToggleButton from "@mui/material/ToggleButton";
+import React, { useState } from 'react';
+import { Layout } from '../../common/layout/layout.component';
+import { Box, Container } from '@mui/system';
+import Typography from '@mui/material/Typography';
+import ToggleButton from '@mui/material/ToggleButton';
+import Category from './category.startproject.component';
+import FormComponent from './form.startproject.component';
 
 const StartProject = () => {
   const [selected, setSelected] = useState(false);
@@ -94,6 +95,8 @@ const StartProject = () => {
                 CRM системы
               </ToggleButton>
             </Box>
+            <Category />
+            <FormComponent />
           </Box>
           <Box
             sx={{ width: "350px", display: "flex", flexDirection: "column" }}
