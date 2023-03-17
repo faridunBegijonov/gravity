@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
-import { Layout } from "../../common/layout/layout.component";
 import { Box } from "@mui/system";
 import ToggleButton from "@mui/material/ToggleButton";
-=======
-import React, { useState } from 'react';
-import { Box } from '@mui/system';
-import ToggleButton from '@mui/material/ToggleButton';
->>>>>>> 7bb6ae4a18786930e1b99bd3b7a27fdf27791357
 
-const Category: React.FC = () => {
+export const Category: React.FC = () => {
   const [selected, setSelected] = useState(false);
   const [selectedWeb, setSelectedWeb] = useState(false);
   const [selectedMobile, setSelectedMobile] = useState(false);
@@ -29,51 +22,11 @@ const Category: React.FC = () => {
     setSelectedCrm(!selectedCrm);
   };
   return (
-<<<<<<< HEAD
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        width: "100%",
-        mt: 3,
-      }}
-    >
-      <ToggleButton
-        value="check"
-        selected={selected}
-        onChange={() => {
-          setSelected(!selected);
-        }}
-      >
-        Проектирование
-      </ToggleButton>
-      <ToggleButton
-        value="check"
-        selected={selectedDesing}
-        onChange={DesingSelect}
-      >
-        UX/UI дизайн
-      </ToggleButton>
-      <ToggleButton
-        value="check"
-        selected={selectedMobile}
-        onChange={mobileSelect}
-      >
-        Мобильная разработка
-      </ToggleButton>
-      <ToggleButton value="check" selected={selectedWeb} onChange={WebSelect}>
-        Web-разработка
-      </ToggleButton>
-      <ToggleButton value="check" selected={selectedCrm} onChange={crmSelect}>
-        CRM системы
-      </ToggleButton>
-    </Box>
-=======
-    <div className='w-full flex justify-center mt-10'>
-      <div className='w-[80%] flex flex-wrap'>
+    <div className="w-full flex justify-center mt-10">
+      <div className="w-[100%] flex flex-wrap">
         <ToggleButton
           sx={{ mr: 1, mb: 1 }}
-          value='check'
+          value="check"
           selected={selected}
           onChange={() => {
             setSelected(!selected);
@@ -83,7 +36,7 @@ const Category: React.FC = () => {
         </ToggleButton>
         <ToggleButton
           sx={{ mr: 1, mb: 1 }}
-          value='check'
+          value="check"
           selected={selectedDesing}
           onChange={DesingSelect}
         >
@@ -91,7 +44,7 @@ const Category: React.FC = () => {
         </ToggleButton>
         <ToggleButton
           sx={{ mr: 1, mb: 1 }}
-          value='check'
+          value="check"
           selected={selectedMobile}
           onChange={mobileSelect}
         >
@@ -99,7 +52,7 @@ const Category: React.FC = () => {
         </ToggleButton>
         <ToggleButton
           sx={{ mr: 1, mb: 1 }}
-          value='check'
+          value="check"
           selected={selectedWeb}
           onChange={WebSelect}
         >
@@ -107,7 +60,7 @@ const Category: React.FC = () => {
         </ToggleButton>
         <ToggleButton
           sx={{ mr: 1, mb: 1 }}
-          value='check'
+          value="check"
           selected={selectedCrm}
           onChange={crmSelect}
         >
@@ -115,8 +68,6 @@ const Category: React.FC = () => {
         </ToggleButton>
       </div>
     </div>
->>>>>>> 7bb6ae4a18786930e1b99bd3b7a27fdf27791357
   );
 };
 
-export default Category;
