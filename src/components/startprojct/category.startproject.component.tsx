@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Layout } from '../../common/layout/layout.component';
-import { Box } from '@mui/system';
-import ToggleButton from '@mui/material/ToggleButton';
+import React, { useState } from "react";
+import { Layout } from "../../common/layout/layout.component";
+import { Box } from "@mui/system";
+import ToggleButton from "@mui/material/ToggleButton";
 
 const Category: React.FC = () => {
   const [selected, setSelected] = useState(false);
@@ -25,14 +25,14 @@ const Category: React.FC = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        width: '100%',
+        display: "flex",
+        justifyContent: "space-between",
+        width: "100%",
         mt: 3,
       }}
     >
       <ToggleButton
-        value='check'
+        value="check"
         selected={selected}
         onChange={() => {
           setSelected(!selected);
@@ -41,23 +41,23 @@ const Category: React.FC = () => {
         Проектирование
       </ToggleButton>
       <ToggleButton
-        value='check'
+        value="check"
         selected={selectedDesing}
         onChange={DesingSelect}
       >
         UX/UI дизайн
       </ToggleButton>
       <ToggleButton
-        value='check'
+        value="check"
         selected={selectedMobile}
         onChange={mobileSelect}
       >
         Мобильная разработка
       </ToggleButton>
-      <ToggleButton value='check' selected={selectedWeb} onChange={WebSelect}>
+      <ToggleButton value="check" selected={selectedWeb} onChange={WebSelect}>
         Web-разработка
       </ToggleButton>
-      <ToggleButton value='check' selected={selectedCrm} onChange={crmSelect}>
+      <ToggleButton value="check" selected={selectedCrm} onChange={crmSelect}>
         CRM системы
       </ToggleButton>
     </Box>

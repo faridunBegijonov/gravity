@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Layout } from '../../common/layout/layout.component';
-import { Box, Container } from '@mui/system';
-import Typography from '@mui/material/Typography';
-import ToggleButton from '@mui/material/ToggleButton';
-import Category from './category.startproject.component';
-import FormComponent from './form.startproject.component';
+import React, { useState } from "react";
+import { Layout } from "../../common/layout/layout.component";
+import { Box, Container } from "@mui/system";
+import Typography from "@mui/material/Typography";
+import ToggleButton from "@mui/material/ToggleButton";
+import Category from "./category.startproject.component";
+import FormComponent from "./form.startproject.component";
 
 const StartProject = () => {
   const [selected, setSelected] = useState(false);
@@ -57,45 +57,8 @@ const StartProject = () => {
                 mt: 3,
               }}
             >
-              <ToggleButton
-                value="check"
-                selected={selected}
-                onChange={() => {
-                  setSelected(!selected);
-                }}
-              >
-                Проектирование
-              </ToggleButton>
-              <ToggleButton
-                value="check"
-                selected={selectedDesing}
-                onChange={DesingSelect}
-              >
-                UX/UI дизайн
-              </ToggleButton>
-              <ToggleButton
-                value="check"
-                selected={selectedMobile}
-                onChange={mobileSelect}
-              >
-                Мобильная разработка
-              </ToggleButton>
-              <ToggleButton
-                value="check"
-                selected={selectedWeb}
-                onChange={WebSelect}
-              >
-                Web-разработка
-              </ToggleButton>
-              <ToggleButton
-                value="check"
-                selected={selectedCrm}
-                onChange={crmSelect}
-              >
-                CRM системы
-              </ToggleButton>
+              <Category />
             </Box>
-            <Category />
             <FormComponent />
           </Box>
           <Box
