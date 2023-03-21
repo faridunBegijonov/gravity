@@ -25,15 +25,15 @@ export const ItemCases: React.FC<IItemCases> = ({
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="amb h-[350px] md:h-[250px] lg:h-[300px]"
+      className="max-[600px] h-[250px] amb h-[350px] md:h-[250px] lg:h-[300px]"
     >
       <img src={src} alt="AmbImg" />
       <p className="font-bold text-[20px]">{name}</p>
       <Link to={path}>
         <div className={`bgAmb hover:bg-[${color}]/50`}>
           <div className="flex flex-col">
-            <span className="text-[22px] mb-[8px] ">{title}</span>
-            <span className="text-[18px] mb-[8px]">{description}</span>
+            <span className="max-[600px]:text-[18px]  text-[22px] mb-[8px] ">{title}</span>
+            <span className="max-[600px]:text-[16px] text-[18px] mb-[8px]">{description}</span>
             <span>{technology}</span>
           </div>
         </div>

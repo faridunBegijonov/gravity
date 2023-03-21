@@ -117,3 +117,9 @@
 .amb:hover .bgAmb div {
   transform: translateY(-50px);
 }
+
+@media (max-width: 600px) {
+  .gridCases {
+    grid-template-columns: 1fr;
+  }
+}
