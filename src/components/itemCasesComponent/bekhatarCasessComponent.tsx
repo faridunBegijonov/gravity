@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Navbar } from '../../common/navbar/navbar.component';
 
 const BekhatarCasessComponent = () => {
   return (
-    <div>BekhatarCasessComponent</div>
-  )
-}
+    <div>
+      <Navbar />
+    </div>
+  );
+};
 
-export default BekhatarCasessComponent
+export default BekhatarCasessComponent;
