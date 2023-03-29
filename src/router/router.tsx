@@ -6,6 +6,7 @@ import Service from "../components/services/service.component";
 import { Servicepage } from "../pages/service/service.page";
 import CasesPage from "../pages/cases/cases.page";
 import StartProjectPage from "../pages/startproject/startproject.page";
+import { CasesAmbPage } from "../pages/casesAmbPage";
 
 export const router = createBrowserRouter([
   {
@@ -28,4 +29,8 @@ export const router = createBrowserRouter([
     path: "/startproject",
     element: <StartProjectPage />,
   },
+  {
+    path: "/cases/amb",
+    element: <CasesAmbPage />
+  }
 ]);
