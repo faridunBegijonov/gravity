@@ -1,46 +1,58 @@
 import * as React from 'react';
 import { Navbar } from '../../common/navbar/navbar.component';
+import { Footer } from '../../common/footer/footer.component';
+import { Button } from '@mui/material';
 import amb_1 from '../../assets/ceses/amb/amb_1.png';
 import amb_2 from '../../assets/ceses/amb/amb_2.png';
 import amb_3 from '../../assets/ceses/amb/amb_3.png';
 import amb_4 from '../../assets/ceses/amb/amb_4.png';
+import amb_5 from '../../assets/ceses/amb/amb_5.png';
+import amb_6 from '../../assets/ceses/amb/amb_6.png';
 
 export const ItemCasesComponent: React.FC = () => {
   const arrString = [
     {
+      tags: '#UI/UX',
       title:
         '— Разработка функционального дизайна сайта согласно корпоративному стилю.',
       id: 1,
     },
     {
+      tags: '#Html',
       title: '— Верстка и программирование сайта.',
       id: 2,
     },
     {
+      tags: '#Css',
       title:
         '— Создание 3 языковых версий сайта (таджикский, русский, английский).',
       id: 3,
     },
     {
+      tags: '#JavaScript',
       title:
         '— Внедрение модуля для выдачи официального курса валют, интегрированный с модулем сайта Нацбанка Таджикистана, для быстрой конвертации валют.',
       id: 4,
     },
     {
+      tags: '#1CBitrix',
       title:
         '— Внедрение разделов для частных лиц, юридических лиц и финансовых организаций.',
       id: 5,
     },
     {
+      tags: '#PHP',
       title:
         '— Добавление раздела «Филиалы и офисы» для поиска филиалов и офисов банка.',
       id: 6,
     },
     {
+      tags: '#MySQL',
       title: '— Добавление кнопок для перехода на социальные сети банка',
       id: 7,
     },
     {
+      tags: '',
       title:
         '— В завершение, презентация сайта и его новых функций представителям банка.',
       id: 8,
@@ -104,9 +116,49 @@ export const ItemCasesComponent: React.FC = () => {
             </p>
           </div>
         </div>
-        <img className='mb-10' src={amb_3} alt='img' />
+        <img src={amb_3} alt='img' />
         <div className='w-full h-[100px]'></div>
-        <img className='mb-10' src={amb_4} alt='img' />
+        <img src={amb_4} alt='img' />
+        <div className='w-full h-[100px]'></div>
+        <img src={amb_5} alt='img' />
+        <div className='w-full h-[100px]'></div>
+        <img src={amb_6} alt='img' />
+        <div className='w-full h-[300px] bg-[#08AB68] flex justify-center mb-10'>
+          <div className='w-[90%]'>
+            <h1 className='font-bold text-[58px] text-white pt-20 pb-5'>
+              Технологии
+            </h1>
+            <ul className='flex w-[80%]'>
+              {arrString.map((el) => (
+                <li
+                  className='w-full text-white font-bold text-[20px]'
+                  key={el.id}
+                >
+                  {el.tags}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className='w-full h-[400px] flex  justify-center'>
+          <div className='w-[90%] pt-10'>
+            <p className='pt-5 pb-5 font-bold text-[18px]'>
+              Понравился проект? Сделаем ваш.
+            </p>
+            <h1 className='font-bold text-[40px] pt-10'>Связаться с нами</h1>
+            <p className='w-[647px] text-[18px] pb-5'>
+              Отправьте нам запрос, чтобы начать общение по вашему проекту.
+            </p>
+            <Button
+              size='large'
+              variant='contained'
+              style={{ textTransform: 'capitalize' }}
+            >
+              Начать проект
+            </Button>
+          </div>
+        </div>
+        <Footer />
       </div>
     </>
   );
