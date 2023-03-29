@@ -7,6 +7,7 @@ import { Servicepage } from "../pages/service/service.page";
 import CasesPage from "../pages/cases/cases.page";
 import StartProjectPage from "../pages/startproject/startproject.page";
 import { CasesAmbPage } from "../pages/casesAmbPage";
+import CasesBekhatarPage from "../pages/casesBekhatarPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,5 +33,9 @@ export const router = createBrowserRouter([
   {
     path: "/cases/amb",
     element: <CasesAmbPage />
+  },
+  {
+    path: "/cases/bekhatar",
+    element: <CasesBekhatarPage />
   }
 ]);
