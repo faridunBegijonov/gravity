@@ -25,7 +25,7 @@ export const ItemCases: React.FC<IItemCases> = ({
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="max-[600px] h-[250px] amb h-[350px] md:h-[250px] lg:h-[300px]"
+      className="max-[600px] h-[250px] amb  md:h-[250px] lg:h-[300px]"
     >
       <img src={src} alt="AmbImg" />
       <p className="font-bold text-[20px]">{name}</p>
