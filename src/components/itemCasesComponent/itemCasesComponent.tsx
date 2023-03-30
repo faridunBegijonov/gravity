@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Navbar } from '../../common/navbar/navbar.component';
 import { Footer } from '../../common/footer/footer.component';
-import { Button } from '@mui/material';
+import { Button, Container } from '@mui/material';
 import amb_1 from '../../assets/ceses/amb/amb_1.png';
 import amb_2 from '../../assets/ceses/amb/amb_2.png';
 import amb_3 from '../../assets/ceses/amb/amb_3.png';
@@ -65,8 +65,8 @@ export const ItemCasesComponent: React.FC = () => {
       </div>
       <div className='w-full h-screen bg-white flex-col justify-end'>
         <Navbar />
-        <div className='w-full h-[500px] flex justify-center pt-20'>
-          <div className='w-[90%]'>
+        <div className='w-full h-[500px] flex justify-center pt-20  pr-5 pl-5'>
+          <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] pb-10'>Заказчик:</h1>
             <a
               href='https://www.amonatbonk.tj'
@@ -74,7 +74,7 @@ export const ItemCasesComponent: React.FC = () => {
             >
               www.amonatbonk.tj
             </a>
-            <p className='w-[647px] text-[18px]'>
+            <p className='sm:w-full md:w-[647px] text-[18px]'>
               Государственный сберегательный банк «Амонатбонк» — народный банк
               Таджикистана. «Амонатбонк» занимает значительное место в
               банковской системе страны благодаря количеству своих отделений, и
@@ -87,10 +87,10 @@ export const ItemCasesComponent: React.FC = () => {
           </div>
         </div>
         <img className='mb-10' src={amb_1} alt='img' />
-        <div className='w-full h-[200px] flex justify-center mb-10'>
-          <div className='w-[90%]'>
+        <div className='w-full h-[200px] flex justify-center mb-20  pr-5 pl-5'>
+          <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] pb-10'>Задачи:</h1>
-            <p className='w-[647px] text-[18px]'>
+            <p className='sm:w-full md:w-[647px] text-[18px]'>
               Перед нами стояла цель создать удобный сайт на трех языках,
               который предоставляет всю необходимую информацию как для частных
               лиц, так и для юридических лиц и финансовых организаций.
@@ -100,38 +100,36 @@ export const ItemCasesComponent: React.FC = () => {
         <div className='w-full'>
           <img src={amb_2} alt='img' />
         </div>
-        <div className='w-full h-screen flex justify-center'>
-          <div className='w-[90%]'>
-            <h1 className='font-bold text-[24px] pb-10'>
+        <div className='w-full h-screen flex justify-center pt-10 mb-20  pr-5 pl-5'>
+          <div className='sm:w-full md:w-[90%]'>
+            <h1 className='font-bold text-[24px] mb-6'>
               При реализации проекта нами были выполнены следующие задачи:
             </h1>
-            <p className='w-[800px] text-[18px]'>
-              <ul>
-                {arrString.map((el) => (
-                  <li className='w-full p-3' key={el.id}>
-                    {el.title}
-                  </li>
-                ))}
-              </ul>
-            </p>
+            <ul className='sm:w-full md:w-[800px] text-[18px]'>
+              {arrString.map((el) => (
+                <li className='w-full p-3' key={el.id}>
+                  {el.title}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        <img src={amb_3} alt='img' />
+        <img className='sm:mt-20 md:mt-10' src={amb_3} alt='img' />
         <div className='w-full h-[100px]'></div>
         <img src={amb_4} alt='img' />
         <div className='w-full h-[100px]'></div>
         <img src={amb_5} alt='img' />
         <div className='w-full h-[100px]'></div>
         <img src={amb_6} alt='img' />
-        <div className='w-full h-[300px] bg-[#08AB68] flex justify-center mb-10'>
-          <div className='w-[90%]'>
-            <h1 className='font-bold text-[58px] text-white pt-20 pb-5'>
+        <div className='w-full h-[400px] bg-[#08AB68] flex justify-center mb-10  pr-5 pl-5'>
+          <div className='sm:w-full md:w-[90%]'>
+            <h1 className='font-bold text-[38px] md:text-[58px] text-white pt-20 pb-5'>
               Технологии
             </h1>
-            <ul className='flex w-[80%]'>
+            <ul className='flex flex-wrap sm:w-full md:w-[80%]'>
               {arrString.map((el) => (
                 <li
-                  className='w-full text-white font-bold text-[20px]'
+                  className=' flex  text-white font-bold sm:text-[18px] md:text-[20px] lg:text-[22px]'
                   key={el.id}
                 >
                   {el.tags}
@@ -140,13 +138,15 @@ export const ItemCasesComponent: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className='w-full h-[400px] flex  justify-center'>
-          <div className='w-[90%] pt-10'>
+        <div className='w-full h-[400px] flex  justify-center pr-5 pl-5'>
+          <div className='sm:w-full md:w-[90%] pt-10'>
             <p className='pt-5 pb-5 font-bold text-[18px]'>
               Понравился проект? Сделаем ваш.
             </p>
-            <h1 className='font-bold text-[40px] pt-10'>Связаться с нами</h1>
-            <p className='w-[647px] text-[18px] pb-5'>
+            <h1 className='font-bold text-[40px] sm:pt-5 md:pt-10'>
+              Связаться с нами
+            </h1>
+            <p className='sm:w-full md:w-[647px] text-[18px] pb-5'>
               Отправьте нам запрос, чтобы начать общение по вашему проекту.
             </p>
             <Button
