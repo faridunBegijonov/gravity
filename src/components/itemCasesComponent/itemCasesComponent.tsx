@@ -65,7 +65,7 @@ export const ItemCasesComponent: React.FC = () => {
       </div>
       <div className='w-full h-screen bg-white flex-col justify-end'>
         <Navbar />
-        <div className='w-full h-[500px] flex justify-center pt-20  pr-5 pl-5'>
+        <div className='w-full sm:h-[900px] md:h-[500px] flex justify-center pt-20 mb-10  pr-5 pl-5'>
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] pb-10'>Заказчик:</h1>
             <a
@@ -87,7 +87,7 @@ export const ItemCasesComponent: React.FC = () => {
           </div>
         </div>
         <img className='mb-10' src={amb_1} alt='img' />
-        <div className='w-full h-[200px] flex justify-center mb-20  pr-5 pl-5'>
+        <div className='w-full sm:h-[400px] md:h-[200px] flex justify-center mb-20  pr-5 pl-5'>
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] pb-10'>Задачи:</h1>
             <p className='sm:w-full md:w-[647px] text-[18px]'>
@@ -100,7 +100,7 @@ export const ItemCasesComponent: React.FC = () => {
         <div className='w-full'>
           <img src={amb_2} alt='img' />
         </div>
-        <div className='w-full h-screen flex justify-center pt-10 mb-20  pr-5 pl-5'>
+        <div className='w-full sm:h-[120vh] md:h-screen lg:h-screen flex justify-center pt-10 mb-20  pr-5 pl-5'>
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] mb-6'>
               При реализации проекта нами были выполнены следующие задачи:
@@ -129,7 +129,7 @@ export const ItemCasesComponent: React.FC = () => {
             <ul className='flex flex-wrap sm:w-full md:w-[80%]'>
               {arrString.map((el) => (
                 <li
-                  className=' flex  text-white font-bold sm:text-[18px] md:text-[20px] lg:text-[22px]'
+                  className=' flex mr-5 mb-4 text-white font-bold sm:text-[18px] md:text-[20px] lg:text-[22px]'
                   key={el.id}
                 >
                   {el.tags}
@@ -143,7 +143,7 @@ export const ItemCasesComponent: React.FC = () => {
             <p className='pt-5 pb-5 font-bold text-[18px]'>
               Понравился проект? Сделаем ваш.
             </p>
-            <h1 className='font-bold text-[40px] sm:pt-5 md:pt-10'>
+            <h1 className='font-bold text-[30px] md:text-[40px] sm:pt-5 md:pt-10'>
               Связаться с нами
             </h1>
             <p className='sm:w-full md:w-[647px] text-[18px] pb-5'>
