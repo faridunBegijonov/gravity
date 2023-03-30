@@ -59,7 +59,7 @@ export const ItemCasesComponent: React.FC = () => {
     },
   ];
   return (
-    <>
+    <Container maxWidth='xl'>
       <div className='bg-[#08AB68] h-screen w-full amb_bg'>
         <Navbar />
       </div>
@@ -160,6 +160,6 @@ export const ItemCasesComponent: React.FC = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </Container>
   );
 };
