@@ -65,7 +65,11 @@ export const ItemCasesComponent: React.FC = () => {
       </div>
       <div className='w-full h-screen bg-white flex-col justify-end'>
         <Navbar />
-        <div className='w-full sm:h-[900px] md:h-[500px] flex justify-center pt-20 mb-10  pr-5 pl-5'>
+        <div
+          className='w-full sm:h-[900px] md:h-[500px] flex justify-center pt-20 mb-10  pr-5 pl-5'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] pb-10'>Заказчик:</h1>
             <a
