@@ -8,8 +8,12 @@ import amb_3 from '../../assets/ceses/amb/amb_3.png';
 import amb_4 from '../../assets/ceses/amb/amb_4.png';
 import amb_5 from '../../assets/ceses/amb/amb_5.png';
 import amb_6 from '../../assets/ceses/amb/amb_6.png';
+import Aos from 'aos';
 
 export const ItemCasesComponent: React.FC = () => {
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
   const arrString = [
     {
       tags: '#UI/UX',
@@ -64,7 +68,9 @@ export const ItemCasesComponent: React.FC = () => {
         <Navbar />
       </div>
       <div className='w-full h-screen bg-white flex-col justify-end'>
-        <Navbar />
+        <div className='fixed w-full h-[100px] z-50'>
+          <Navbar />
+        </div>
         <div
           className='w-full sm:h-[900px] md:h-[500px] flex justify-center pt-20 mb-10  pr-5 pl-5'
           data-aos='fade-up'
@@ -90,7 +96,13 @@ export const ItemCasesComponent: React.FC = () => {
             </p>
           </div>
         </div>
-        <img className='mb-10' src={amb_1} alt='img' />
+        <img
+          className='mb-10'
+          src={amb_1}
+          alt='img'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        />
         <div className='w-full sm:h-[400px] md:h-[200px] flex justify-center mb-20  pr-5 pl-5'>
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] pb-10'>Задачи:</h1>
@@ -101,31 +113,65 @@ export const ItemCasesComponent: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className='w-full'>
+        <div className='w-full' data-aos='fade-up' data-aos-duration='1000'>
           <img src={amb_2} alt='img' />
         </div>
-        <div className='w-full sm:h-[120vh] md:h-screen lg:h-screen flex justify-center pt-10 mb-20  pr-5 pl-5'>
+        <div
+          className='w-full sm:h-[120vh] md:h-screen lg:h-screen flex justify-center pt-10 mb-20  pr-5 pl-5'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[24px] mb-6'>
               При реализации проекта нами были выполнены следующие задачи:
             </h1>
             <ul className='sm:w-full md:w-[800px] text-[18px]'>
               {arrString.map((el) => (
-                <li className='w-full p-3' key={el.id}>
+                <li
+                  className='w-full p-3'
+                  key={el.id}
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
+                >
                   {el.title}
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <img className='sm:mt-20 md:mt-10' src={amb_3} alt='img' />
+        <img
+          className='sm:mt-20 md:mt-10'
+          src={amb_3}
+          alt='img'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        />
         <div className='w-full h-[100px]'></div>
-        <img src={amb_4} alt='img' />
+        <img
+          src={amb_4}
+          alt='img'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        />
         <div className='w-full h-[100px]'></div>
-        <img src={amb_5} alt='img' />
+        <img
+          src={amb_5}
+          alt='img'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        />
         <div className='w-full h-[100px]'></div>
-        <img src={amb_6} alt='img' />
-        <div className='w-full h-[400px] bg-[#08AB68] flex justify-center mb-10  pr-5 pl-5'>
+        <img
+          src={amb_6}
+          alt='img'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        />
+        <div
+          className='w-full h-[400px] bg-[#08AB68] flex justify-center mb-10  pr-5 pl-5'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='sm:w-full md:w-[90%]'>
             <h1 className='font-bold text-[38px] md:text-[58px] text-white pt-20 pb-5'>
               Технологии
@@ -142,7 +188,11 @@ export const ItemCasesComponent: React.FC = () => {
             </ul>
           </div>
         </div>
-        <div className='w-full h-[400px] flex  justify-center pr-5 pl-5'>
+        <div
+          className='w-full h-[400px] flex  justify-center pr-5 pl-5'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='sm:w-full md:w-[90%] pt-10'>
             <p className='pt-5 pb-5 font-bold text-[18px]'>
               Понравился проект? Сделаем ваш.
